@@ -17,8 +17,8 @@ Clone this repo and start coding right away without any setup hassle.
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-username/react-vite-starter.git
-   cd react-vite-starter
+   git clone https://github.com/RaunakDiesFromCode/darun-react-kit.git
+   cd darun-react-kit
    ```
 
 2. **Install dependencies**
