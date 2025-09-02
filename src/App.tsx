@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
+import { JSX } from "react";
 
-export default function App() {
+export default function App(): JSX.Element {
     return (
         <Router>
             <div className="p-4">

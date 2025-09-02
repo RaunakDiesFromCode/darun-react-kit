@@ -1,12 +1,19 @@
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import axios from "axios";
 
-export default function Home() {
-    const [data, setData] = useState(null);
+interface Todo {
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
+}
+
+export default function Home(): JSX.Element {
+    const [data, setData] = useState<Todo | null>(null);
 
     useEffect(() => {
         axios
-            .get("https://jsonplaceholder.typicode.com/todos/1")
+            .get<Todo>("https://jsonplaceholder.typicode.com/todos/1")
             .then((res) => setData(res.data))
             .catch((err) => console.error(err));
     }, []);
